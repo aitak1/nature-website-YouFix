@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature Website</title>
+    <style>
+        /* CSS for Navigation Bar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #7cb342;
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+        .search-bar {
+            flex: 1;
+            display: flex;
+            align-items: center;
+        }
+        .search-input {
+            padding: 8px;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+        .search-button {
+            padding: 8px 15px;
+            border-radius: 5px;
+            background-color: #558b2f;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .navigation-tabs {
+            display: flex;
+        }
+        .navigation-tab {
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        /* CSS for Explore Page */
+        .filter-box {
+            padding: 20px;
+            border: 1px solid #558b2f;
+            border-radius: 10px;
+            margin: 20px;
+        }
+        .list-entry {
+            padding: 20px;
+            border: 1px solid #558b2f;
+            border-radius: 10px;
+            margin: 20px;
+            display: flex;
+            align-items: center;
+        }
+        .list-image {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .list-details {
+            flex: 1;
+        }
+        .list-details h3 {
+            margin: 0;
+        }
+        .list-details p {
+            margin: 5px 0;
+        }
+
+        /* CSS for Community Page */
+        .add-post-button {
+            margin-top: 20px;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .post {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #558b2f;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .post-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+        .post-description {
+            flex: 1;
+            overflow-y: auto;
+        }
+        .like-button {
+            margin-top: 10px;
+        }
+        .add-comment-button {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="search-bar">
+            <label for="search-input">Enter your search query:</label>
+            <input type="text" id="search-input" class="search-input" placeholder="Search...">
+            <button class="search-button" style="color: #000; background-color: #fff;">
+                Search
+                </button>                
+        </div>
+        <div class="navigation-tabs">
+            <div class="navigation-tab">Community Page</div>
+            <div class="navigation-tab">Explore Page</div>
+        </div>
+    </div>
+
+    <div class="filter-box">
+        <label for="filter">Filter:</label>
+        <select id="filter">
+            <option value="plants">Plants</option>
+            <option value="animals">Animals</option>
+            <option value="both">Both</option>
+        </select>
+    </div>
+
+    <div class="list-entry">
+        <img class="list-image" src="plant_or_animal_image.jpg" alt="Plant/Animal Image">
+        <div class="list-details">
+            <h3>Plant/Animal Name</h3>
+            <p>Small description of the plant/animal.</p>
+        </div>
+    </div>
+
+    <div class="add-post-button">
+        <button onclick="openForm()">Add Post</button>
+    </div>
+
+    <div class="post">
+        <img class="post-image" src="user_post_image.jpg" alt="User Post Image">
+        <div class="post-description">
+            <p>User's post description goes here. It can be a bit longer to test the scrollability.</p>
+            <button class="like-button">Like</button>
+            <button class="add-comment-button">Add Comment</button>
+        </div>
+    </div>
+
+    <script>
+        function openForm() {
+            // Code to open the form for adding a post
+        }
+    </script>
+</body>
